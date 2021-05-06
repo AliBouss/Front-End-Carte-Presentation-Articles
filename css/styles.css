@@ -27,11 +27,19 @@ body{
     margin: 0 25px;
     box-shadow: 0px 10px 25px rgba(0,0,0,0.4)
 }
+.img1{
+    background: url(../img/tshirt1.png);
+}
+.img2{
+    background: url(../img/tshirt2.png);
+}
+.img3{
+    background: url(../img/tshirt3.png);
+}
 
 .partImg{
     height: 60%;
     width: 100%;
-    background: url(../img/tshirt1.png);
     background-position:top;
     position: relative;
     border-bottom: 1px solid rgba(0,0,0,0.1);
@@ -88,4 +96,76 @@ body{
     width: 80%;
     font-size: 25px;
     position: relative;
+}
+
+.titreCarte::after{
+    content:"Men's Runnng shirt";
+    font-weight: 100;
+    font-size:14px;
+    position: absolute;
+    top: 45px;
+
+}
+
+.prix{
+    width: 20%;
+    font-size: 18px;
+}
+
+.tailles{
+    padding: 5px 10px;
+    width:100%;
+}
+.taillesTxt{
+    margin:0;
+    font-size:18px;
+    font-weight: bold;
+    position: relative;
+
+}
+
+.taillesTxt::after{
+    content: "S, M, L, XL";
+    font-weight: 100;
+    font-size:16px;
+    position: absolute;
+    top: 20px;
+    left:0;
+}
+
+.colors{
+    padding: 20px 10px;
+    width: 100%;
+}
+.sousTitreC{
+    padding-bottom: 5px;
+    font-size: 20px;
+    margin: 0;
+}
+.contRonds{
+    width: 100%;
+    display: flex;
+}
+.ronds{
+    height: 30px;
+    width:30px;
+    border-radius: 50%;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.ronds:nth-child(1){
+    background:black;
+}
+.ronds:nth-child(2){
+    background:gray;
+}
+.ronds:nth-child(3){
+    background:mediumblue;
+}
+.ronds:nth-child(4){
+    background:lime;
+}
+.ronds:nth-child(5){
+    background: #fff;
+    border: O.1px solid rgba(0,0,0,0.8);
 }
